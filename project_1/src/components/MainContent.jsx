@@ -13,7 +13,26 @@ import { MdEmail } from "react-icons/md";
 
 
 
+
+
 const MainContent = () => {
+
+  const handleScroll = () => {
+    let head = document.querySelector(".headerContainer2")
+    
+    let atualPosicao = window.scrollY
+    
+    if(atualPosicao > 80) {
+      head.classList.add("sobeHeader")
+    } else {
+      head.classList.remove("sobeHeader")
+
+    }
+    
+  }
+  window.addEventListener("wheel", handleScroll)
+
+
   return (
     <div className="mainContentContainer">
       {/* Background pagina inicial */}
@@ -21,8 +40,7 @@ const MainContent = () => {
         <img id="bg-image" src={bgImage} alt="Imagem de fundo" />
       </div>
 
-      {/* Header 2 */}
-
+      {/* Header 1 */}
       <header>
         <div className="headerContainer">
           <div className="contatosHeader">
@@ -49,7 +67,8 @@ const MainContent = () => {
           </div>
         </div>
 
-        <div className="headerContainer2">
+        {/* Header 2 */}
+        <div onWheel={handleScroll} className="headerContainer2">
           <img id="logo" src={logo} alt="Logomarca" />
           <Navbar />
         </div>

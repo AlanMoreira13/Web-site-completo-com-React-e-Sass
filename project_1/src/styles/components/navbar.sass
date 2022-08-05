@@ -10,3 +10,21 @@ ul
         font-size: 1.3rem
         font-family: 'Cormorant Upright', serif
         font-weight: 500
+        transition: .1s
+        position: relative
+        transform: 6ms ease-in
+
+        :before
+            content: ' '
+            position: absolute
+            bottom: 0px
+            left: 0px
+            width: 0px
+            height: 2px
+            background-color: #fff
+            transition: all .8s ease
+        
+        :hover:before
+                width: 100%
+        
+

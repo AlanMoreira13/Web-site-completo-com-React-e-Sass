@@ -1,5 +1,6 @@
 import "../styles/components/navbar.sass"
 
+
 const Navbar = () => {
   return (
     <div>
