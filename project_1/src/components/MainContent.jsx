@@ -11,6 +11,8 @@ import {
 } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
+
+
 const MainContent = () => {
   return (
     <div className="mainContentContainer">
@@ -58,9 +60,10 @@ const MainContent = () => {
         <p className="descricaoMain">
           Somos um escritório de advocacia na busca dos direitos que interessam
           a coletividade, respeitando as particularidades de cada um dos nossos
-          clientes.
+          clientes. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dicta accusamus dignissimos eveniet cumque praesentium voluptatibus quos recusandae laudantium saepe ea assumenda, esse vero minima ut deleniti nam dolor hic. Lorem ipsum dolor sit amet consectetur, adipitione in deserunt. Dolores, beatae? Id eveniet aliquid totam aspernatur.
         </p>
       </section>
+      
     </div>
   );
 };
